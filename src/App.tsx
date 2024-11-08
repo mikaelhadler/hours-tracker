@@ -1,4 +1,5 @@
 import Header from "./components/custom/Header";
+import HoursCard from "./components/custom/HoursCard";
 import { cn } from "./lib/utils";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     >
       <Header />
       <div className="flex flex-1 h-full flex-col justify-center items-center">
-        <h1>dadsa</h1>
+        <HoursCard />
       </div>
     </main>
   );

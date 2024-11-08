@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 
 @layer base {
