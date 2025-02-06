@@ -7,7 +7,7 @@ interface InputWithLabelProps extends React.ComponentProps<"input"> {
 
 const InputWithLabel: React.FC<InputWithLabelProps> = ({ label, ...props }) => {
   return (
-    <div className="grid w-full items-center gap-3">
+    <div className="grid items-center w-full gap-3">
       <Label htmlFor={props.id}>{label}</Label>
       <Input {...props} />
     </div>
