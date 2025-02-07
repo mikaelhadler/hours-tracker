@@ -43,7 +43,6 @@ const HoursCard: React.FC = () => {
       <CardContent>
         <HoursForm onSubmit={onSubmit} />
       </CardContent>
-
       <DialogResults
         contractedHours={contractedHours}
         totalHoursWorked={totalHoursWorked}

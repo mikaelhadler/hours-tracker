@@ -11,8 +11,8 @@ function App() {
       )}
     >
       <Header />
-      <div className="flex flex-col items-center justify-center flex-1 h-full">
-        <Card className="w-2/3">
+      <div className="flex flex-col items-center justify-center flex-1 h-full px-4 sm:px-0">
+        <Card>
           <HoursCard />
         </Card>
       </div>

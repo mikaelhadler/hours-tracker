@@ -1,5 +1,3 @@
-"use client";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -8,20 +6,16 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+
 export const FormSchema = z.object({
-  contractedHours: z.number().min(1, {
-    message: "Contracted hours must be greater than 0",
-  }),
-  totalHoursWorked: z.number().min(1, {
-    message: "Total hours worked must be greater than 0",
-  }),
+  contractedHours: z.number().min(1),
+  totalHoursWorked: z.number().min(1),
 });
 
 export function HoursForm({
@@ -41,7 +35,7 @@ export function HoursForm({
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-2/3 space-y-6"
+        className="space-y-6"
       >
         <FormField
           control={form.control}
@@ -75,7 +69,6 @@ export function HoursForm({
                   value={field.value}
                 />
               </FormControl>
-              <FormMessage />
             </FormItem>
           )}
         />
